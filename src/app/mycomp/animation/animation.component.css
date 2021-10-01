@@ -1,0 +1,152 @@
+
+.maindiv{
+    margin-top: 70px;
+    height: 100vh;
+  }
+  
+  .headdiv h1{
+    color: black;
+    font-size: 35px;
+    margin: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-family: "Merriweather", Georgia, serif;
+  }
+  .headdiv p{
+    text-align: center;
+    margin: 55px 100px 100px 100px;
+    line-height: 37px;
+    font-size: 35px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .cards-list {
+      z-index: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+    .card {
+      margin: 30px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 40px;
+      position: relative;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+      cursor: pointer;
+      transition: 0.4s;
+    }
+   
+  
+    .card .card_image {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+    }
+    
+    .card .card_image img {
+      width: inherit;
+      height: inherit;
+      border-radius: 40px;
+      object-fit: fill;
+    }
+    
+    .card .card_title {
+      text-align: center;
+      border-radius: 0px 0px 40px 40px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      margin-top: -80px;
+      height: 40px;
+    }
+    
+    .card:hover {
+      transform: scale(0.9, 0.9);
+      box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+        -5px -5px 30px 15px rgba(0,0,0,0.22);
+    }
+    
+    .title-white {
+      color: white;
+    }
+    
+    .title-black {
+      color: black;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: white;
+      border-radius: 40px;
+      box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    }
+    .card:hover .overlay {
+      opacity: 0.9;
+    }
+    .text {
+      color: black;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .overlay p{
+      font-family: "Open Sans", sans-serif;
+      font-weight: bolder;
+    }
+    .animated {
+      visibility: visible !important;
+  }
+  @keyframes cardmove {
+    from {top: -100px;}
+    to {top: 0px;}
+  }
+   .cardanim{
+    animation: cardmove 1s ;
+    transition: 0.4s;
+   
+  }
+  
+  
+  
+    @media all and (max-width: 500px) {
+      .card-list {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+      }
+     .headdiv p{
+        line-height: 37px;
+        font-size: 20px;
+        margin: 14px 25px 5px 25px;
+    }
+    }
+    
+    
+    /*
+    .card {
+      margin: 30px auto;
+      width: 300px;
+      height: 300px;
+      border-radius: 40px;
+      background-image: url('https://i.redd.it/b3esnz5ra34y.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-repeat: no-repeat;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+      transition: 0.4s;
+    }
+    */

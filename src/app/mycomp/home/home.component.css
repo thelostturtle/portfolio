@@ -1,0 +1,65 @@
+.maindiv{
+    width: 100%;
+    background-image: url('/assets/img/bw.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 70px;
+}
+h1 {
+    margin: 0;
+    padding-top: 2%;
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 0.25em;
+    margin-bottom: 20px;
+    line-height: 65px;
+    margin-top: 0px;
+    font-family: "Merriweather", Georgia, serif;
+ } 
+ .inncontainer
+ {
+     margin-left: 8%;
+     margin-right: 20%;
+ }
+ p.heading{
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bolder;
+    color: white;
+ }
+ p.desc{
+  font-size: 25px;
+  line-height: 40px;
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: white;
+ }
+ 
+  @media screen and (min-width: 0px) and (max-width: 640px) {
+    h1 {
+      font-size: 36px;
+      } 
+      .inncontainer
+      {
+          margin-left: 8%;
+          margin-right: 5%;
+      }
+      p.heading{
+        font-weight: bolder;
+        font-size: 24px;
+      }
+      p.desc{
+        font-size: 16px;
+        line-height: 36px;
+      }
+      .maindiv{
+        margin-top: 72px;
+      }
+    }

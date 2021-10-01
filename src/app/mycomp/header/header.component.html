@@ -1,0 +1,28 @@
+<div class="header-fixed">
+	<div class="header-limiter">
+		<h1><a href="#">Arpita</a></h1>
+		<nav>
+			<a routerLink="/" (click)="toHome()" routerLinkActive="active">Home</a>
+			<a routerLink="/animation" (click)="toanm()">Services</a>
+			<a routerLink="/about" (click)="toabout()">About</a>
+			<a href="#">Contact</a>
+		</nav>
+	</div>
+</div>
+
+
+<div class="main">
+	<section>
+		<a class="anchor_offset" id="home"></a>
+		<app-home></app-home>
+	</section>
+	<section >
+		<a class="anchor_offset" id="anim"></a>
+		<app-animation></app-animation>
+	</section>
+	<section>
+		<a class="anchor_offset" id="about"></a>
+		<app-about></app-about>
+	</section>
+
+</div>
