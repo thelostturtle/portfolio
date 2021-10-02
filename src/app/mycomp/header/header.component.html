@@ -1,10 +1,10 @@
 <div class="header-fixed">
 	<div class="header-limiter">
-		<h1><a href="#">Arpita</a></h1>
+		<!-- <h1><a href="#">Arpita</a></h1> -->
 		<nav>
-			<a routerLink="/" (click)="toHome()" routerLinkActive="active">Home</a>
-			<a routerLink="/animation" (click)="toanm()">Services</a>
-			<a routerLink="/about" (click)="toabout()">About</a>
+			<a routerLink="/" (click)="onchangenav('home')" routerLinkActive="active">Home</a>
+			<a routerLink="/animation" (click)="onchangenav('anim')">Services</a>
+			<a routerLink="/about" (click)="onchangenav('about')">About</a>
 			<a href="#">Contact</a>
 		</nav>
 	</div>

@@ -16,17 +16,23 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  toanm(){
-    document.getElementById("anim")?.scrollIntoView({behavior:"smooth"});
+
+  onchangenav(id:any) {
+    document.getElementById(id)?.scrollIntoView({behavior:"smooth"});
+
   }
-  toHome()
-  {
-    document.getElementById("home")?.scrollIntoView({behavior:"smooth"});
-  }
-  toabout()
-  {
-    document.getElementById("about")?.scrollIntoView({behavior:"smooth"}); 
-  }
+
+  // toanm(){
+  //   document.getElementById("anim")?.scrollIntoView({behavior:"smooth"});
+  // }
+  // toHome()
+  // {
+  //   document.getElementById("home")?.scrollIntoView({behavior:"smooth"});
+  // }
+  // toabout()
+  // {
+  //   document.getElementById("about")?.scrollIntoView({behavior:"smooth"}); 
+  // }
  
 
 }
